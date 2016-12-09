@@ -1,5 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
 .wraper {
     max-width: 1366px;
     margin: 0 auto;
     padding: 0 35px;
+    font-family: Roboto, Verdana, sans-serif;
+}
+
+.social {
+    float: left;
+    padding: 0 15px;
+}
+
+.social__icon {
+    height: 23px;
+    margin: 7px;
+}
+
+.login {
+    color: #909090;
+    float: right;
+    padding: 0 15px;
+}
+
+.login__icon {
+    height: 23px;
+    margin: 7px;
+    vertical-align: middle;
+}
+
+.login__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.line-width {
+    min-height: 1px;
+    background: #909090;
+    clear: both;
+    margin: 0 -35px;
+}
+
+.logo {
+    float: left;
+    padding: 0 15px;
+}
+
+.logo__image {
+    margin: 17px 0 13px;
+    max-width: 100%;
+}
+
+.basket {
+    float: right;
+    padding-right: 35px;
+}
+
+.basket__link {
+    text-decoration: none;
+    color: #000;
+}
+
+.basket__icon {
+    height: 36px;
+    margin: 30px 20px 28px 0;
+    vertical-align: middle;
+}
+
+.basket__description {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Verdana;
+    font-size: 14pt;
+}
+
+.search {
+    text-align: center;
+    margin: 25px 0 27px;
+}
+
+.search__input {
+    height: 37px;
+    width: 285px;
+    padding-left: 15px;
+    border: none;
+    background: #f2f2f2;
+}
+
+.search__button {
+    background: #f00;
+    display: inline-block;
+    padding: 6px 25px;
+    position: relative;
+    top: 4px;
+}
+
+.search__icon {
+    height: 22px;
+}
+
+.menu {
+    clear: both;
+    margin: 0 -35px;
+    background: #f00;
+    padding: 3px 0;
+}
+
+.menu__item {
+    display: inline-block;
+    color: #fff;
+    width: calc(25% - 1px);
+    text-align: center;
+    line-height: 40px;
+    border-left: 1px solid #fff;
+}
+
+.menu__item:first-child {
+    border-left: none;
 }
