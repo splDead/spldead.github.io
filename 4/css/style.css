@@ -108,6 +108,7 @@
     border: none;
     background: #f2f2f2;
     font-size: 20px;
+    outline: none;
 }
 
 .search__button {
