@@ -1,0 +1,41 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px;
+  box-sizing: border-box;
+
+  .block__item {
+    min-height: 100px;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+  }
+
+  &_big {
+    flex: 1 1 100%;
+    background: orange;
+  }
+
+  &_mid {
+    flex: 1 1 45%;
+    background: green;
+  }
+
+  &_small {
+    flex: 1 1 30%;
+    background: pink;
+  }
+}
