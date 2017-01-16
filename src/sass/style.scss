@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import "../../node_modules/normalize.css/normalize";
+
+$primary_color: #2574a9;
+$background_color: #fafafa;
+$border_color: #cccccc;
+
+body {
+  background: $background_color;
+  font-family: Roboto, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+.wraper {
+  max-width: 1170px;
+  margin: 60px auto;
+  box-sizing: border-box;
+
+  @media screen and (max-width: 1200px) {
+    margin: 30px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 2%;
+  }
+
+  /*
+    Аватарка
+   */
+
+  .author {
+    width: 270px;
+    margin-right: 30px;
+    background: #FFFFFF;
+    float: left;
+
+    @media screen and (max-width: 900px) {
+      width: 30%;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-right: 2%;
+    }
+
+    &__description {
+      font-size: 16px;
+      color: #c1c1c1;
+      text-align: center;
+      padding: 20px;
+      border-bottom: $border_color dashed 1px;
+
+      @media screen and (max-width: 768px) {
+        padding: 2% 2% 10% 2%;
+      }
+
+      .author__name {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 700;
+        margin: 12px 0;
+      }
+    }
+
+    /*
+        Ссылки на соцсети
+         */
+
+    &__social {
+      text-align: center;
+      padding: 10px;
+
+      @media screen and (max-width: 768px) {
+        padding: 2%;
+      }
+
+      .author__link {
+        text-decoration: none;
+        color: #000;
+      }
+
+      .social-wrap {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid black;
+        border-radius: 50%;
+        width: 32px;
+        height: 32px;
+        margin: 10px;
+        transition: color .3s ease, border .3s ease;
+
+        &:hover {
+          color: $primary_color;
+          border: 1px solid $primary_color;
+        }
+      }
+    }
+  }
+
+  /*
+    Навигация
+   */
+
+  .navigation {
+    background: #FFFFFF;
+    text-align: center;
+    display: flex;
+
+    @media screen and (max-width: 768px) {
+      display: block;
+      float: left;
+      clear: both;
+      width: 30%;
+    }
+
+    .navigation__list {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      width: 100%;
+
+      @media screen and (max-width: 768px) {
+        display: block;
+      }
+
+      li {
+        width: 20%;
+        border-right: 1px dashed $border_color;
+
+        @media screen and (max-width: 768px) {
+          border-right: none;
+          border-top: 1px dashed $border_color;
+          width: 100%;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    &__link {
+      text-decoration: none;
+      color: #000;
+      transition: color .3s ease;
+
+      &:hover {
+        color: $primary_color;
+      }
+
+      .navigation__item {
+        padding: 20% 0;
+
+        @media screen and (max-width: 768px){
+          padding: 10% 0;
+        }
+
+        .fa-user,
+        .fa-file-text-o,
+        .fa-suitcase,
+        .fa-comments,
+        .fa-map-marker {
+          padding: 10%;
+        }
+      }
+    }
+    
+    .navigation__link_active {
+      color: $primary_color;
+    }
+  }
+
+  /*
+    Основной контент
+   */
+
+  .content {
+    margin-top: 30px;
+    background: #FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 0;
+    }
+
+    .content__title {
+      font-size: 20px;
+      color: $primary_color;
+      line-height: 75px;
+      padding-left: 25px;
+      border-bottom: 1px dashed $border_color;
+      width: 100%;
+    }
+
+    .content__about-me {
+      margin: 25px;
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+
+      .content__info-me {
+        flex: 3;
+      }
+
+      .content__list {
+        padding: 0;
+        list-style-type: none;
+
+        .content__item {
+          margin: 20px 0;
+
+          .content__data {
+            color: #949494;
+          }
+
+          .content__link {
+            text-decoration: none;
+            color: #949494;
+            transition: color .3s ease, border .3s ease;
+
+            &:hover {
+              color: $primary_color;
+              border-bottom: 1px solid rgba($primary_color, .3);
+            }
+          }
+        }
+      }
+
+      .content__skills {
+        flex: 4;
+
+        @media screen and (max-width: 768px){
+          flex: 100%;
+        }
+      }
+
+      .content__skills-list {
+        padding: 0;
+        list-style-type: none;
+        margin-left: 25px;
+
+        @media screen and (max-width: 768px){
+          margin-left: 0;
+        }
+
+        .content__skills-item {
+          margin: 20px 0;
+
+          .content__skills-index {
+            height: 6px;
+            margin: 15px 0;
+            width: 100%;
+            border-radius: 6px;
+            border: 1px solid $primary_color;
+
+            .skills-value1,
+            .skills-value2,
+            .skills-value3,
+            .skills-value4,
+            .skills-value5 {
+              background: $primary_color;
+              height: inherit;
+            }
+
+            .skills-value1 {
+              width: 20%;
+            }
+
+            .skills-value2 {
+              width: 40%;
+            }
+
+            .skills-value3 {
+              width: 60%;
+            }
+
+            .skills-value4 {
+              width: 80%;
+            }
+
+            .skills-value5 {
+              width: 100%;
+            }
+          }
+        }
+      }
+    }
+
+    .content__description,
+    .content__doing {
+      margin: 0 25px;
+    }
+
+    .copyright {
+      text-align: center;
+      line-height: 60px;
+      border-top: 1px dashed $border_color;
+      font-size: 13px;
+      color: #b4b4b4;
+      width: 100%;
+    }
+  }
+}

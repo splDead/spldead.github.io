@@ -1,0 +1,30 @@
+{
+  "name": "spldead.github.io",
+  "version": "1.0.0",
+  "description": "Vcard about me",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/splDead/spldead.github.io.git"
+  },
+  "author": "Goryachev Sergey",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/splDead/spldead.github.io/issues"
+  },
+  "homepage": "https://github.com/splDead/spldead.github.io#readme",
+  "devDependencies": {
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-imagemin": "^3.1.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^2.0.0"
+  },
+  "dependencies": {
+    "normalize.css": "^5.0.0"
+  }
+}
