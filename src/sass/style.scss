@@ -121,6 +121,10 @@ img {
       color: #FFFFFF;
       position: relative;
 
+      &:hover {
+        cursor: pointer;
+      }
+
       &__item {
         font-weight: 600;
         letter-spacing: 2px;
