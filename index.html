@@ -4,17 +4,14 @@
     <meta charset="UTF-8">
     <title>Goryachev Sergey Vcard</title>
     <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" href="./css/style.css" class="css">
-    <link rel="stylesheet" href="./css/font-awesome.min.css" class="css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="js/script.js"></script>
 </head>
 <body>
     <div class="wraper">
-
-        <!-- Аватарка и ссылки на соцсети -->
-
         <aside class="author">
             <div class="author__me">
                 <img src="./src/img/me.jpg" alt="Горячев Сергей">
@@ -27,7 +24,7 @@
                     Junior Frontend Developer
                 </div>
             </div>
-            <div class="author__social">
+            <div class="author-social">
                 <a href="https://www.facebook.com/spldead" target="_blank" class="author__link"><div class="social-wrap">
                     <i class="fa fa-facebook" aria-hidden="true"></i>
                 </div></a>
@@ -36,15 +33,14 @@
                 </div></a>
             </div>
         </aside>
-
-        <!-- Навигация -->
         <div class="menu">
             <button class="hamburger hamburger--squeeze" type="button">
               <span class="hamburger-box">
                 <span class="hamburger-inner"></span>
               </span>
             </button>
-            <span class="menu__item">Меню</span></div>
+            <span class="menu__item">Меню</span>
+        </div>
         <nav class="navigation">
             <ul class="navigation__list">
                 <li>
@@ -89,10 +85,7 @@
                 </li>
             </ul>
         </nav>
-
-        <!-- Основной контент -->
-
-        <main class="content">
+        <div class="content">
             <h1 class="content__title">Обо мне</h1>
             <div class="content__about-me">
                 <div class="content__info-me">
@@ -131,17 +124,41 @@
                 </div>
             </div>
             <article class="content__description">
-                <h2 class="content__title-h2">Я веб разработчик</h2>
-                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут рыбные тексты. Вдали от всех живут они в буквенных домах на берегу Семантика большого языкового океана. Маленький ручеек Даль журчит по всей стране и обеспечивает ее всеми необходимыми правилами. Эта парадигматическая страна, в которой жаренные члены предложения залетают прямо в рот. Даже всемогущая пунктуация не имеет власти над рыбными текстами, ведущими безорфографичный образ жизни. Однажды одна маленькая строчка рыбного текста по имени Lorem ipsum решила выйти в большой мир грамматики. Великий Оксмокс предупреждал ее о злых запятых, диких знаках вопроса и коварных точках с запятой, но текст не дал сбить себя с толку. Он собрал семь своих заглавных букв, подпоясал инициал за пояс и пустился в дорогу. Взобравшись на первую вершину курсивных гор, бросил он последний взгляд назад, на силуэт своего родного города Буквоград, на заголовок деревни Алфавит и на подзаголовок своего переулка Строчка. Грустный реторический вопрос скатился по его щеке и он продолжил свой путь. По дороге встретил текст рукопись. Она предупредила его: «В моей стране все переписывается по несколько раз. Единственное, что от меня осталось, это приставка «и». Возвращайся ты лучше в свою безопасную страну». Не послушавшись рукописи, наш текст продолжил свой путь. Вскоре ему повстречался коварный составитель</p>
+                <h2 class="content__title-h2">Мои навыки</h2>
+                <p class="content__text">
+                    Изучал верстку на курсах в Школе современных технологий в конце 2016 года. Освоил на них
+                    основы HTML и CSS, познакомился базово с JavaScript. В рамках курса познакомился с препроцессорами
+                    CSS, особенно меня заинтересовал SASS. Активно его применяю.
+                </p>
+                <p class="content__text">
+                    На практике применяю библиотеку JQuery, иконочные шрифты и библиотеки с анимацией. При разработке
+                    стараюсь придерживаться БЭМ.
+                </p>
+                <p class="content__text">
+                    Прочитал книгу Дэвида Флэнагана "JavaScript. Подробное руководство". Нашел ее весьма интересной и
+                    достаточно понятной. В процессе прочтения находится книга Б.Лоусона, Р.Шарпа - Изучаем HTML 5.
+                </p>
+                <h2 class="content__title-h2">Сертификаты</h2>
+                <div class="certificates">
+                    <div class="certificates__image"><img src="./img/NT-K5EYYJ5.jpg" alt="HTML и CSS. Профессиональная верстка"></div>
+                    <div class="certificates__image"><img src="./img/NT-Z9M6WUX.jpg" alt="JavaScript для верстальщиков"></div>
+                    <div class="certificates__image"><img src="./img/NT-THHV72W.jpg" alt="Продвинутая верстка"></div>
+                </div>
             </article>
-            <div class="content__doing">
-                <h2 class="content__title-h2">Что я умею</h2>
-                <p>Душа моя озарена неземной радостью, как эти чудесные весенние утра, которыми я наслаждаюсь от всего сердца. Я совсем один и блаженствую в здешнем краю, словно созданном для таких, как я. Я так счастлив, мой друг, так упоен ощущением покоя, что искусство мое страдает от этого. Ни одного штриха не мог бы я сделать, а никогда не был таким большим художником, как в эти минуты. Когда от милой моей долины поднимается пар и полдневное солнце стоит над непроницаемой чащей темного леса и лишь редкий луч проскальзывает в его святая святых, а я лежу в высокой траве у быстрого ручья и, прильнув к земле, вижу тысячи всевозможных былинок и чувствую, как близок моему сердцу крошечный мирок, что снует между стебельками, наблюдаю эти неисчислимые, непостижимые разновидности червяков и мошек и чувствую близость всемогущего, создавшего нас по своему подобию, веяние вселюбящего, судившего нам парить в вечном блаженстве, когда взор мой туманится и все вокруг меня и небо надо мной запечатлены в моей душе, точно образ возлюбленной, - тогда, дорогой друг, меня часто томит мысль: "Ах! Как бы выразить, как бы вдохнуть в рисунок то, что так полно, так трепетно живет во мне, запечатлеть отражение моей души, как душа моя - отражение предвечного бога!" Друг</p>
-            </div>
-            <div class="copyright">
-                &copy; 2017
-            </div>
-        </main>
+            <footer class="footer">
+                <div class="copyright">
+                    &copy; 2017
+                </div>
+                <div class="author-social author-social_footer-small">
+                    <a href="https://www.facebook.com/spldead" target="_blank" class="author__link"><div class="social-wrap">
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                    </div></a>
+                    <a href="https://vk.com/id8802978" target="_blank" class="author__link"><div class="social-wrap">
+                        <i class="fa fa-vk" aria-hidden="true"></i>
+                    </div></a>
+                </div>
+            </footer>
+        </div>
     </div>
 </body>
 </html>
