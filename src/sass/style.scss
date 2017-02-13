@@ -295,8 +295,43 @@ img {
         margin: 0 10px;
       }
 
+      .contact-form {
+        flex: 1 1 auto;
+
+        .form__input {
+          margin: 10px 0;
+        }
+
+        .form__input,
+        .form__message {
+          display: block;
+          box-sizing: border-box;
+          width: 256px;
+          padding: 10px 0 10px 10px;
+          border: #e2e2e2 1px solid;
+
+          &::-webkit-input-placeholder {
+            font-size: 12px;
+          }
+        }
+
+        .form__button {
+          margin: 20px 0;
+          background: $primary_color;
+          outline: none;
+          border: none;
+          color: #FFFFFF;
+          padding: 10px 20px;
+          cursor: pointer;
+        }
+      }
+
       .content__info-me {
-        flex-grow: 1;
+        flex: 1 1 auto;
+      }
+
+      .content__title-h2 {
+        font-size: 18px;
       }
 
       .content__list {
